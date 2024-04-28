@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Структура щастя</title>
+    </head>
+    <body>
+        <header>
+            <img src="https://th.bing.com/th/id/OIP.oQ3OvSmJSIcxoYbWOStQUQHaHa?rs=1&pid=ImgDetMain"/>
+                <a class="sp_button" href="index.html">Головна</a>
+                <a href="playlist.html">Плейлист</a>
+                <a href="video.html">Відеокліпи</a>
+        </header>
+        <main>
+            <h2 id="catalog">Каталог</h2>
+            <section class="catalog">
+                <article class="product">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1thCe82z9qGtpfMFhaO6ne?utm_source=generator" width="100%" height="150" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"> </iframe>
+                    <br/>
+                    <a href="">Біль від дотиків</a>
+                </article>
+                <article class="product">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0ntiYlSYPru1ceh7qYk1PZ?utm_source=generator" width="100%" height="150"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <br/>
+                     
+                    <a href="">запам'ятай мої рядки</a>
+                </article>
+                <article class="product">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0NrFZtznfZ9cpFQS4cImQ9?utm_source=generator" width="100%" height="150" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <a href="">Будиночки</a>
+                </article>
+                <article class="product">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/40R8mdc7vde5T0j3HxlAln?utm_source=generator" width="100%" height="150" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <br/>
+                    <a href="">силуети</a>
+                </article>
+                <article class="product">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0844YtTkuCfhPwzUe8yq1I?utm_source=generator" width="100%" height="150" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <br/>
+                    <a href="">сидативи</a>
+                </article>
+                <article class="product">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/35ovIhRJolZuUTqFa6kXjL?utm_source=generator" width="100%" height="150"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <br/>
+                    <a href="">система гроя</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+         <p>Інстаграм:@lizavamnestruktura</p>
+            <p>Телефон:+380 67 999 95 59</p>
+            <p></p>
+        </footer>
+    </body>
+<style>
+  body{
+    background-color: black;
+    color: blue;
+}
+
+header {
+    background-color: navy;
+    padding: 20px;
+    width: 100%;
+}
+
+header a {
+    color: black;
+    background-color: rgb(255, 91, 195);
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid rgb(255, 192, 232);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 30px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+.sp_button {
+    background-color: rgb(255, 6, 164);
+    border: 1px solid rgb(255, 6, 164);
+}
+.catalog a {
+    text-decoration: none;
+    color: rgb(255, 6, 164);
+    border-bottom: 1px dotted rgb(0, 247, 255);
+    font-size: 20px;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(19, 3, 162);
+}
+
+.product {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: 5px double rgb(255, 6, 164);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(12, 7, 88);
+    position: relative;
+}
+
+.product::before {
+    content: url("/uploads/2021/03/paw-155322_1280%201_0_1614946877.png");
+    width: 30px;
+    height: 30px;
+    display: block;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.product:hover::before {
+    opacity: 1;
+}
+
+.product:hover{
+    box-shadow: 0 10px 15px 0 rgb(255, 6, 164);
+    top: 10px;
+}
+
+footer{
+    margin: 20px;
+    width: 100%;
+    border-top: 1px double rgb(255, 6, 164);
+}
+</style>
